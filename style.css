@@ -1,0 +1,85 @@
+
+*{
+    margin:0px;
+    padding:0px;
+  }
+  .content{
+    width:100%;
+    height:100vh;
+    background:url("https://i.postimg.cc/hGdJhMV7/sky-ged2bd0ec7-1920.jpg");
+    background-size:100% 100%;
+    overflow:hidden;
+  }
+  .earth{
+    width:200px;
+    height:200px;
+    background:url("https://i.postimg.cc/hjWSYsFc/New-global-view-max-1000x1000-1.png");
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-size: 500px 100%;
+    transform:translate(-50%,-50%);
+    box-shadow:inset 0px 0px 5px #FDFFF29E, inset 30px 0px 50px #000000;
+    
+    animation:mymove 20s infinite linear ;
+  }
+  @keyframes mymove {
+    0%{
+      background-position-x:0px;
+    }
+    100%{
+      background-position-x:1000px;
+    }
+  } 
+  .orbit{
+    width:300px;
+    height:300px;
+    border:1px solid white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    animation: mymove-1 30s infinite linear ;
+  } 
+  @keyframes mymove-1{
+    100%{
+    transform:translate(-50%,-50%) rotate(360deg);
+  }
+  } 
+  .moon{
+    width:50px;
+    height:50px;
+    background:url("https://i.postimg.cc/65dCbjD5/full-moon-1869760-640.webp");
+    background-size:cover;
+    background-size:220px;
+    background-position:center;
+    border-radius:50%;
+    box-shadow:inset 20px 0px 20px #24252A91;
+    position:absolute;
+    top:50px;
+  }
+  .link-4{
+    position:absolute;
+    top:90%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+  width:250px;
+  text-align:center;
+    color:white;
+    font-weight:999;
+    font-size:4vw;
+    Background:#45425A;
+    height:35px ;
+    font-size:20px;
+    padding-top:5px;
+    border-radius:5px;
+   margin-bottom:5vw;
+   text-decoration:none;
+  }
+  .link-4:hover {
+    color:black;
+  }
+  
